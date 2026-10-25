@@ -1,0 +1,7 @@
+# Keep source data local; never commit raw files
+/data/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
+.venv/

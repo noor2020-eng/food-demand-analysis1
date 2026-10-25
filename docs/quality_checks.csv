@@ -1,0 +1,5 @@
+issue,count,decision
+Missing cells in train,0,Inspect columns; avoid blind imputation
+Exact duplicate rows,0,Review before removing
+Checkout price above base price,116101,Retain signed discount unless confirmed erroneous
+Rows with nonpositive orders,0,Investigate if present

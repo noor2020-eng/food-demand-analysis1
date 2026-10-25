@@ -1,0 +1,23 @@
+{
+  "validation_weeks": [
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145
+  ],
+  "training_rows_available_before_validation": 423727,
+  "training_rows_sampled_for_model": 120000,
+  "validation_rows": 32821,
+  "random_forest_mae": 95.303,
+  "previous_week_baseline_mae": 92.939,
+  "mae_improvement_percent_vs_baseline": -2.54,
+  "target_transform": "log1p; predictions converted back with expm1",
+  "model": "RandomForestRegressor(n_estimators=30, max_depth=16, min_samples_leaf=5, max_features=0.9, random_state=42)",
+  "note": "For laptop-friendly runtime, model fitting uses reproducible random samples (up to 120,000 rows for validation and 150,000 for final test predictions). Temporal holdout: train on weeks before the final 10 training weeks, evaluate on the final 10 weeks. Test.csv has no num_orders labels, so its MAE cannot be calculated."
+}

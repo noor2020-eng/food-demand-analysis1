@@ -1,0 +1,8 @@
+﻿المشكلة,العدد,الملاحظة,قرار المعالجة
+Missing values in train,0,No missing values found,Preserve valid observed records; document any treatment
+Exact duplicate rows in train,0,No exact duplicate rows found,Do not remove unless confirmed erroneous
+checkout_price > base_price,116101,Found; not automatically invalid because base/checkout pricing can reflect price changes,Retain and calculate signed discount; inspect negative discount values
+num_orders <= 0,0,Review for anomalous target values,Retain if present unless data dictionary establishes invalidity
+Unmatched meal IDs after merge,0,No unmatched meal IDs,Use validated many-to-one merge; preserve row count
+Unmatched center IDs after merge,0,No unmatched center IDs,Use validated many-to-one merge; preserve row count
+Observed center-meal-week combinations,456548,Dataset is a sparse set of combinations; absent weeks may be non-listed rather than zero demand,Do not automatically fill missing combinations with zero without confirmation
